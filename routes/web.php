@@ -73,5 +73,5 @@ Route::get('/notif', [MahasiswaController::class, 'notif'])->name('notif.mhs');
 //     return bla;
 // }
 
-
-
+Route::get('/cekobject', [MahasiswaController::class, 'cekobject']);
+Route::get('/insert', [MahasiswaController::class, 'insert']);
