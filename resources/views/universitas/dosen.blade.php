@@ -1,5 +1,6 @@
 @extends('layout.master')
 
+<!-- mengirimkan variable title ke dalam master di extends yang berisikan value 'Data Dosen'. Biasanya di master harus dituliskan @yield('title') -->
 @section('title', 'Data Dosen')
 
 @section('dsnaktif', 'active')

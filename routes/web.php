@@ -75,3 +75,10 @@ Route::get('/notif', [MahasiswaController::class, 'notif'])->name('notif.mhs');
 
 Route::get('/cekobject', [MahasiswaController::class, 'cekobject']);
 Route::get('/insert', [MahasiswaController::class, 'insert']);
+
+Route::get('/update/{id}', [MahasiswaController::class, 'update']);
+Route::get('/delete/{id}', [MahasiswaController::class, 'delete']);
+
+Route::get('/crud/{id?}', [MahasiswaController::class, 'crud'])->name('formcrud');
+
+Route::post('/crud', [MahasiswaController::class, 'crudprocess'])->name('crudprocess');
